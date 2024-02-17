@@ -76,11 +76,11 @@ public class Hayvan {
     }
 
     public Hayvan() {
-
+        this.id = UUID.randomUUID().toString();
     }
 
     public Hayvan(String ad, byte yas, String tur, String renk, String yasamAlani) {
-        this.id = UUID.randomUUID().toString();
+        this();
         this.ad = ad;
         this.yas = yas;
         this.tur = tur;
