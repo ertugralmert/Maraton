@@ -6,12 +6,12 @@ import java.util.Scanner;
 
 public class KediController extends HayvanController {
 
-    Scanner scanner = new Scanner(System.in);
+  private final   Scanner scanner = new Scanner(System.in);
 
-    private KediService kedi = new KediService();
+    private final KediService kedi = new KediService();
 
     @Override
-    public void hayvanOlustur() {
+    public final void hayvanOlustur() {
         System.out.println("Kopek oluşturma işlemi başlatıldı");
         System.out.print("Lütfen Kedinin ismini giriniz:");
         String ad = scanner.nextLine();
@@ -31,28 +31,28 @@ public class KediController extends HayvanController {
         kedi.kediKacCanli(kacCanli);
     }
 
-    public void hareketEt(){
+    public final void hareketEt(){
         System.out.println(kedi.harekEt());
     }
 
-    public void yemekYe(){
+    public final void yemekYe(){
         System.out.println(kedi.yemekYe());
     }
 
-    public void yasArttir(){
+    public final void yasArttir(){
         System.out.println(kedi.yasArttir());
     }
 
-    public void uyuma(){
+    public final void uyuma(){
         System.out.println(kedi.uyuma());
     }
 
-    public void uyandirma(){
+    public final void uyandirma(){
         System.out.println(kedi.uyandirma());
     }
 
     @Override
-    public void listeleme() {
+    public final void listeleme() {
         System.out.println(kedi.listeleme());
     }
 }

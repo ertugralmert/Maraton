@@ -3,6 +3,7 @@ package com.mert.ucuncusoru;
 import com.mert.ucuncusoru.controller.HayvanController;
 import com.mert.ucuncusoru.controller.KediController;
 import com.mert.ucuncusoru.controller.KopekController;
+import com.mert.ucuncusoru.controller.KusController;
 import com.mert.ucuncusoru.database.Hayvanlar;
 import com.mert.ucuncusoru.entity.Hayvan;
 import com.mert.ucuncusoru.entity.Kedi;
@@ -26,6 +27,14 @@ public class Runner {
         hayvan.uyuma();
         hayvan.uyandirma();
         hayvan.yasArttir();
+        hayvan.listeleme();
+
+        hayvan = new KusController();
+        hayvan.hayvanOlustur();
+        hayvan.uyuma();
+        hayvan.yasArttir();
+        hayvan.hareketEt();
+        hayvan.yemekYe();
         hayvan.listeleme();
 
 

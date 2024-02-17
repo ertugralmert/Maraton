@@ -6,12 +6,12 @@ import java.util.Scanner;
 
 public class KopekController extends HayvanController{
 
- private    Scanner scanner = new Scanner(System.in);
+ private  final    Scanner scanner = new Scanner(System.in);
 
- private KopekService kopek = new KopekService();
+ private final   KopekService kopek = new KopekService();
 
     @Override
-    public void hayvanOlustur() {
+    public final void hayvanOlustur() {
         System.out.println("Kopek oluşturma işlemi başlatıldı");
         System.out.print("Lütfen Kopek ismini giriniz:");
         String ad = scanner.nextLine();
@@ -33,32 +33,32 @@ public class KopekController extends HayvanController{
     }
 
     @Override
-    public void hareketEt() {
+    public final void hareketEt() {
         System.out.println(kopek.harekEt());
     }
 
     @Override
-    public void yemekYe() {
+    public final void yemekYe() {
         System.out.println(kopek.yemekYe());
     }
 
     @Override
-    public void yasArttir() {
+    public final void yasArttir() {
         System.out.println(kopek.yasArttir());
     }
 
     @Override
-    public void uyuma() {
+    public final void uyuma() {
         System.out.println(kopek.uyuma());
     }
 
     @Override
-    public void uyandirma() {
+    public final   void uyandirma() {
         System.out.println(kopek.uyandirma());
     }
 
     @Override
-    public void listeleme() {
+    public final void listeleme() {
         System.out.println(kopek.listeleme());
     }
 }
